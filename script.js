@@ -47,6 +47,30 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // --- Reasons Logic ---
+    const reasonsBtn = document.getElementById('reasons-btn');
+    const reasonText = document.getElementById('reason-text');
+    const reasons = [
+        "Your smile lights up my whole world! ✨",
+        "You're the kindest person I know. ❤️",
+        "The way you make me laugh until my stomach hurts! 😂",
+        "Your eyes are my favorite place to get lost in. 👀",
+        "You're my best friend and my soulmate. 🤝",
+        "Just being around you makes everything better. 🌈",
+        "You always know how to make me feel special. 💖"
+    ];
+
+    if (reasonsBtn) {
+        reasonsBtn.addEventListener('click', () => {
+            const randomReason = reasons[Math.floor(Math.random() * reasons.length)];
+            reasonText.style.opacity = '0';
+            setTimeout(() => {
+                reasonText.innerText = randomReason;
+                reasonText.style.opacity = '1';
+            }, 200);
+        });
+    }
+
     // --- Yes Button Logic ---
     if (btnYes) {
         btnYes.addEventListener('click', () => {
