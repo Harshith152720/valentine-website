@@ -22,14 +22,49 @@
     </div>
 
     <main class="main-container">
-        <!-- Main Question - This is now the ONLY initial view -->
-        <div class="card glass-effect step active" id="main-card">
+        <!-- Step 1: Initial Hook -->
+        <div class="card glass-effect step active" id="step-1">
+            <div class="image-wrapper">
+                <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbm5pZGFnYXp5YXBnaHhyNHpueXpueXpueXpueXpueXpueXpueSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/v9G3NGByE9x16/giphy.gif"
+                    alt="Cute Wave" class="gif-img">
+            </div>
+            <h1>Are you ready for a surprise? ✨</h1>
+            <p class="subtitle">I have something to ask you...</p>
+            <button class="btn btn-primary" onclick="nextStep(2)">Yes, I'm ready! ➡️</button>
+        </div>
+
+        <!-- Step 2: Care Question -->
+        <div class="card glass-effect step" id="step-2">
+            <div class="image-wrapper">
+                <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHpueXpueXpueXpueXpueXpueXpueXpueXpueSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/L3jf6uXJ3wZ7x6/giphy.gif"
+                    alt="Love eyes" class="gif-img">
+            </div>
+            <h1>Wait... 🛑</h1>
+            <p class="subtitle">Did you know you're the most amazing person I've ever met?</p>
+            <button class="btn btn-primary" onclick="nextStep(3)">Aww, tell me more! 😊</button>
+        </div>
+
+        <!-- Step 3: Game/Team Question -->
+        <div class="card glass-effect step" id="step-3">
+            <div class="image-wrapper">
+                <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHpueXpueXpueXpueXpueXpueXpueXpueXpueSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/vK6I7Xf1W6M4S1Aoy8/giphy.gif"
+                    alt="Together" class="gif-img">
+            </div>
+            <h1>Do you think we make a great team? 👫</h1>
+            <div class="buttons-grid">
+                <button class="btn btn-primary" onclick="nextStep(4)">The best! 🏆</button>
+                <button class="btn btn-secondary" onclick="nextStep(4)">Forever and always! ♾️</button>
+            </div>
+        </div>
+
+        <!-- Step 4: The Main Valentine Question -->
+        <div class="card glass-effect step" id="main-card">
             <div class="image-wrapper">
                 <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHpueXpueXpueXpueXpueXpueXpueXpueXpueSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/cLS1cfxvGOPVpf9g3y/giphy.gif"
                     alt="Cute Cat" class="gif-img main-ask-gif" id="main-gif">
             </div>
             <h1 class="big-question">Will you be my Valentine?</h1>
-            <p class="subtitle">Please say yes! 🥺</p>
+            <p class="subtitle">I really hope you say yes! 🥺</p>
 
             <div class="buttons action-buttons">
                 <button id="yes-btn" class="btn btn-yes">Yes, definitely! 😍</button>
@@ -47,7 +82,7 @@
                 <img src="https://media.giphy.com/media/T86i6yDyOYz7J6v9d5/giphy.gif" alt="Happy Hug" class="gif-img">
             </div>
             <h1 class="celebrate-title">YAY! ❤️</h1>
-            <p class="love-note">I knew you'd say yes! I love you!</p>
+            <p class="love-note">You've made me the happiest person ever!</p>
             <button class="btn btn-white" onclick="location.reload()">Replay 🔄</button>
         </div>
     </main>
