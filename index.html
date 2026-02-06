@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For You 💖</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Outfit:wght@400;600&family=Playfair+Display:ital,wght@1,500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="background-effects" id="background-effects">
+        <div class="gradient-sphere one"></div>
+        <div class="gradient-sphere two"></div>
+    </div>
+
+    <main class="main-container">
+        <!-- Main Question - This is now the ONLY initial view -->
+        <div class="card glass-effect step active" id="main-card">
+            <div class="image-wrapper">
+                <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbXNtaW16Z3I3Z3g3Z3g3Z3g3Z3g3Z3g3Z3g3Z3g3Z3g3/26FLdmIp6wJr91J4k/giphy.gif"
+                    alt="Please" class="gif-img main-ask-gif">
+            </div>
+            <h1 class="big-question">Will you be my Valentine?</h1>
+            <p class="subtitle">Please say yes! 🥺</p>
+
+            <div class="buttons action-buttons">
+                <button id="yes-btn" class="btn btn-yes">Yes, definitely! 😍</button>
+                <button id="no-btn" class="btn btn-no">No 😢</button>
+            </div>
+        </div>
+
+        <!-- Simple Celebration -->
+        <div class="card glass-effect step" id="celebration-card">
+            <div class="image-wrapper">
+                <img src="https://media.giphy.com/media/T86i6yDyOYz7J6v9d5/giphy.gif" alt="Happy Hug" class="gif-img">
+            </div>
+            <h1 class="celebrate-title">YAY! ❤️</h1>
+            <p class="love-note">I knew you'd say yes! I love you!</p>
+            <button class="btn btn-white" onclick="location.reload()">Replay 🔄</button>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
