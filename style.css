@@ -160,6 +160,7 @@ h1 {
     /* Larger title */
     background: linear-gradient(45deg, var(--primary), #ff5e62);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 1rem;
     line-height: 1.1;
@@ -268,8 +269,15 @@ h1 {
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(5px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* Final Celebration Styles */
@@ -278,9 +286,7 @@ h1 {
     width: 100%;
 }
 
-.content-scroll {
-    /* If content overflows */
-}
+
 
 /* Special styling for the final step to allow more content */
 #step-5.active {
