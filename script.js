@@ -20,9 +20,9 @@ document.addEventListener('DOMContentLoaded', () => {
         // Show specific step after a tiny delay for smooth animation
         setTimeout(() => {
             let nextElement;
-            if (stepNumber === 6) {
+            if (stepNumber === 8) {
                 nextElement = document.getElementById('main-card');
-            } else if (stepNumber === 7) {
+            } else if (stepNumber === 9) {
                 nextElement = document.getElementById('celebration-card');
             } else {
                 nextElement = document.getElementById(`step-${stepNumber}`);
@@ -115,7 +115,7 @@ document.addEventListener('DOMContentLoaded', () => {
         btnYes.style.transform = 'scale(1)';
 
         // Use generic nextStep logic to move to celebration
-        window.nextStep(7);
+        window.nextStep(9);
 
         // Confetti Explosion
         const duration = 10000;
