@@ -20,9 +20,9 @@ document.addEventListener('DOMContentLoaded', () => {
         // Show specific step after a tiny delay for smooth animation
         setTimeout(() => {
             let nextElement;
-            if (stepNumber === 4) {
+            if (stepNumber === 6) {
                 nextElement = document.getElementById('main-card');
-            } else if (stepNumber === 5) {
+            } else if (stepNumber === 7) {
                 nextElement = document.getElementById('celebration-card');
             } else {
                 nextElement = document.getElementById(`step-${stepNumber}`);
@@ -31,6 +31,9 @@ document.addEventListener('DOMContentLoaded', () => {
             if (nextElement) {
                 nextElement.classList.add('active');
                 currentStepNum = stepNumber;
+
+                // Reset scroll to top of card area if needed
+                window.scrollTo({ top: 0, behavior: 'smooth' });
             }
         }, 300);
     };
@@ -112,7 +115,7 @@ document.addEventListener('DOMContentLoaded', () => {
         btnYes.style.transform = 'scale(1)';
 
         // Use generic nextStep logic to move to celebration
-        window.nextStep(5);
+        window.nextStep(7);
 
         // Confetti Explosion
         const duration = 10000;
